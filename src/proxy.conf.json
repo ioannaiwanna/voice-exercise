@@ -1,0 +1,10 @@
+{
+  "/api": {
+    "target": "https://vog.ert.gr",
+    "secure": false,
+    "pathRewrite": {
+      "^/api": ""
+    },
+    "changeOrigin": true
+  }
+}

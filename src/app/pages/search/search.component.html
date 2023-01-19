@@ -1,0 +1,11 @@
+<main>
+  <form>  
+ 
+  <input id="searchInput" type="text" [formControl]="searchInput"  >
+
+    <mat-list-option *ngFor="let result of results " [value]="results$"  >      
+       {{result}}
+    </mat-list-option>
+  </form>
+
+</main>
