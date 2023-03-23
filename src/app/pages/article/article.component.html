@@ -1,0 +1,13 @@
+<main>
+  <button mat-icon-button color="primary" (click)="back()">
+    <mat-icon>arrow_back_ios_new</mat-icon>
+  </button>
+
+  <mat-list *ngFor="let article of articles">
+    <mat-list-item [routerLink]="['articledetail', article.id]">
+      <h3>{{ article.title.rendered }}</h3>
+
+      <a>{{ article.date }} </a>
+    </mat-list-item>
+  </mat-list>
+</main>

@@ -1,0 +1,7 @@
+<main>
+  <button mat-icon-button color="primary" (click)="back()">
+    <mat-icon >arrow_back_ios_new</mat-icon>
+</button>
+    <h3>{{article.title.rendered}}</h3>
+  <div [innerHtml]="article.content.rendered "></div>  
+</main>
